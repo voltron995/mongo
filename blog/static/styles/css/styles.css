@@ -1,0 +1,54 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+body{
+	background: @bd-bg;
+	height: 100%;
+	margin:0;
+}
+header{
+	height: 15%;
+	width: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.logo{
+	background: url(../images/logo.png) left no-repeat;
+	background-size: contain;
+	height: 120px;
+	width: 120px;
+	position: absolute;
+}
+
+.container{
+	background: url(../images/main_bg.jpg) center no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	width: 100%;
+	height: 70%;
+	/*padding-top: 25%;*/
+}
+
+.container p{
+	font: 2em Helvetica, sans-serif;
+	color: #D8F0F0;
+	text-align: center;
+	/*margin-top: 50%;*/
+	/*vertical-align: middle;*/
+}
+
+.btn{
+	float: right;
+	margin-right: 10px;
+}
+
+.sign-in{
+	background: #26B2D8;
+}
+
+footer{
+	height: 15%
+}
