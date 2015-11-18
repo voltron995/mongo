@@ -1,9 +1,22 @@
-{% extends "base.html" %}
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#    {% for entry in entry_list %}#}
+{#        {% include "_entry.html" with entry=entry only %}#}
+{#    {% empty %}#}
+{#        <p>No blog entries yet.</p>#}
+{#    {% endfor %}#}
+{#{% endblock content %}#}
+{##}
 
-{% block content %}
-    {% for entry in entry_list %}
-        {% include "_entry.html" with entry=entry only %}
-    {% empty %}
-        <p>No blog entries yet.</p>
-    {% endfor %}
-{% endblock content %}
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>hello world!</h1>
+
+
+        <a href="/register">Register</a>
+        <a href="/log_in">Login</a>
+    </body>
+</html>
+

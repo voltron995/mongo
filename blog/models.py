@@ -36,7 +36,7 @@ class Comment(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
     body = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True,editable=False)
+    created_at = models.DateTimeField(auto_now_add=True, editable=False)
     modified_at = models.DateTimeField(auto_now_add=True, editable=False)
 
     def gravatar_url(self):
@@ -60,3 +60,6 @@ class UserProfile(models.Model):
     website = models.URLField(blank=True)
     picture = models.ImageField(upload_to='profile_images', blank=True)
 
+
+    def __str__(self):
+        return self.username
